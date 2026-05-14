@@ -1,0 +1,12 @@
+# Force GitHub to recognize SQL as primary language
+*.sql linguist-language=SQL
+*.sql linguist-detectable=true
+
+# Reduce JS weight
+frontend/src/*.jsx linguist-documentation=true
+backend/routes/*.js linguist-documentation=true
+backend/*.js linguist-documentation=true
+
+# Ignore node_modules completely
+node_modules/* linguist-vendored=true
+frontend/node_modules/* linguist-vendored=true
